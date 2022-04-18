@@ -13,11 +13,11 @@ contract Token is ERC20, AccessControl {
         grantRole(MINTER, msg.sender);
     }
 
-    function mint(uint amount, address to) external onlyRole(MINTER) {
+    function mint(uint256 amount, address to) external onlyRole(MINTER) {
         _mint(to, amount);
     }
 
-    function burn(uint amount, address from) external onlyRole(MINTER) {
+    function burn(uint256 amount, address from) external onlyRole(MINTER) {
         _burn(from, amount);
     }
 }

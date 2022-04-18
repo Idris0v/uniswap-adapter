@@ -1,21 +1,10 @@
 {
-  "name": "hardhat-template",
+  "name": "uniswap-adapter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslint": "eslint --ignore-path .gitignore --ext .js,.ts .",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(ts|js|sol)\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Idris0v/hardhat-template.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Idris0v/hardhat-template/issues"
-  },
-  "homepage": "https://github.com/Idris0v/hardhat-template#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-etherscan": "^3.0.3",

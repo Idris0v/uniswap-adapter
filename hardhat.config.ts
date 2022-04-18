@@ -15,8 +15,8 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       forking: {
-        url: 'https://mainnet.infura.io/v3/' + process.env.INFURA_KEY,
-      }
+        url: "https://mainnet.infura.io/v3/" + process.env.INFURA_KEY,
+      },
     },
     rinkeby: {
       url: process.env.RINKEBY_URL || "",
@@ -29,9 +29,9 @@ const config: HardhatUserConfig = {
     settings: {
       optimizer: {
         enabled: true,
-        runs: 200
-      }
-    }
+        runs: 200,
+      },
+    },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
